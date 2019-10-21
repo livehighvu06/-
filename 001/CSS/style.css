@@ -5,7 +5,7 @@
 }
 body{
     background-color: #e08c82;
-    padding: 1.5em 0 0;
+    padding: 1.2em 0 0;
 }
 .logo a{
     display: block;
@@ -18,14 +18,34 @@ body{
     border-radius: 100px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .6);
 }
+
 .container{
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 7em auto 1em;
     padding: 0 0 1.5em;
     background-color: #fff;
     border-radius: 7px;
 }
-.menu::after{
+@media screen and (max-width: 767px){
+    .logo a{
+        width: 120px;
+        height: 120px;
+        margin: 0 0 0px -60px;
+    }
+    .container{
+        margin: 4em auto 0;
+    }
+    .menu{
+        font-size: .8em;
+        border-radius: 0;
+        padding: .3em 0;
+    }
+    .menu i{
+        padding-bottom: 10px;
+    }
+}
+.menu ul::after{
     content: '';
     display: block;
     width: 0;
@@ -41,7 +61,7 @@ body{
 .menu i{
     display: block;
     font-size: 40px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 .menu li{
     width: 20%;
@@ -49,6 +69,19 @@ body{
     justify-content: center;
     flex-direction: column;
     box-sizing: border-box;
+}
+@media screen and (min-width: 768px) and (max-width: 979px){
+    .logo a {
+        width: 160px;
+        height: 160px;
+        margin: 0 0 0 -80px;
+    }
+    .container{
+        margin: 5.5em auto 0;
+    }
+    .menu li{
+        width: 25%;
+    }
 }
 .menu .active a{
     color:#d93324;
