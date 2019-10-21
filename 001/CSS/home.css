@@ -1,0 +1,14 @@
+/* home page info */
+.info .txt{
+    line-height: 1.6;
+    padding-bottom: 1.5em;
+}
+.info .btn{
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #d83023;
+    border-radius: 100px;
+    padding: .5em 3em;
+    display: block;
+    margin: auto;
+}

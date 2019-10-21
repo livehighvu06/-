@@ -1,0 +1,27 @@
+.info{
+    margin: 7em auto 1em;
+}
+.title{
+    font-size: 2em;
+    color:#d83023 ;
+}
+.info form{
+    text-align: center;
+    width: 40%;
+    margin: auto;
+}
+.info form input[type='text'],
+.info form input[type='password']{
+    display: block;
+    width: 80%;
+    margin:0 auto 1.5em;
+    line-height: 3;
+    font-size: 1.1em;
+    padding:0  0.5em;
+    border:1px #c1c1c1 solid;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0,0,0,.4);
+}
+.btn{
+    width: 80%;
+}

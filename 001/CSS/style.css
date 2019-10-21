@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background-color: #e08c82;
+    padding: 1.5em 0 0;
+}
+.logo a{
+    display: block;
+    background: url('https://picsum.photos/160/160/?random=1');
+    width: 185px;
+    height: 185px;
+    position: absolute;
+    left: 50%;
+    margin: 0 0 0 -92.5px;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+}
+.container{
+    width: 1200px;
+    margin: 7em auto 1em;
+    padding: 0 0 1.5em;
+    background-color: #fff;
+    border-radius: 7px;
+}
+.menu::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+}
+.menu{
+    padding: .5em 0;
+    text-align: center;
+    box-shadow: 0px 2px 6px rgba(0,0,0,.6);
+    border-radius: 5px;
+}
+.menu i{
+    display: block;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.menu li{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.menu .active a{
+    color:#d93324;
+}
+.menu li a{
+    display:block;
+    text-decoration: none;
+    color:#353535;
+    padding: .5em 0 .5em;
+    transition: .2s;
+}
+.menu li a:hover{
+    color:#d93324 ;
+}
+.menu li:nth-child(1),
+.menu li:nth-child(2){
+    float: left;
+}
+.menu li:nth-child(3),
+.menu li:nth-child(4){
+    float: right;
+}
+.info{
+    padding: 1.5em 3em 1.5em;
+}
+.info .title{
+    padding: 1em 0 1em;
+}
+.info .btn{
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #d83023;
+    border-radius: 100px;
+    padding: .5em 3em;
+    display: block;
+    margin: auto;
+}
+.info .btn:hover{
+    cursor: pointer;
+}
+.info .btn:focus{
+    outline: none;
+}
