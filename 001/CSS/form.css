@@ -25,3 +25,22 @@
 .btn{
     width: 80%;
 }
+@media screen and (min-width: 768px) and (max-width: 979px){
+    .info form{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 767px){
+    .info form{
+        width: 70%;
+    }
+}
+@media screen and (max-width:669px){
+    .info form{
+        width: 100%;
+    }
+    .info form input[type='text'],
+    .info form input[type='password']{
+        width: 90%;
+    }
+}
