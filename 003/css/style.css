@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Roboto-Medium;
+}
+.wrap{
+    width: 1024px;
+    margin: 0 auto;
+    height: 100vh;
+}
+.task-select{
+    background-color: #5B90DC;
+    text-align: center;
+}
+.task-select .active{
+    color: #fff;
+}
+.task-select ul::after{
+    content: '';
+    display:block;
+    height: 0;
+    width: 0;
+    clear: both;
+}
+.task-select ul{
+    width: 661px;
+    margin: 0 auto;
+}
+.task-select li{
+    width: 160px;
+    line-height: 71px;
+    margin: 0 30px;
+    float: left;
+    font-size: 24px;
+    
+    transition: .2s;
+}
+.task-select li:hover{
+    color: #fff;
+    animation: slide .2s;
+}
+.task-select li:first-child{
+    margin-right: 31px;
+    border-bottom: 5px solid #00408b;
+}
+.content{
+    background-color: #E1E1E1;
+    padding-top: 22px;
+}
+.todo-list{
+    width: 620px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: #F2F2F2;
+    box-shadow:0 2px 3px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.task-title{
+    height: 76px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 32px;
+    padding-left: 32px;
+    border-bottom: 2px solid #C8C8C8;;
+}
+.task-title i{
+    font-size: 24px;
+}
+.task-title .editing i{
+    color: #4A90E2;
+}
+.task-title .checkbox{
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+}
+.task-title input[type=text]{
+    border: none;
+    background-color: #F2F2F2;
+    color: #000;
+    font-size: 24px;
+    outline:none;
+    margin-left: 16px;
+    flex-grow:2;
+    font-weight: 500;
+}
+.task-title input[type=text]::placeholder{
+    color: #000;
+}
+.star{
+    margin-right: 32px;
+}
+.section{
+    width: 100%;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+.section:first-child{
+    margin-top: 23px;
+}
+.section i{   
+    display: inline-block;
+    vertical-align: top;
+    font-size: 24px;
+    margin-left: 72px;
+    margin-right: 9px;
+}
+.item{
+    display: inline-block;
+}
+.section h3{
+    font-size: 20px;
+}
+.item input{
+    margin-top: 8px;
+    padding: 8px 19px 8px 16px;
+    border: none;
+    border-radius: 2px;
+}
+.item input::placeholder{
+    font-size: 16px;
+}
+.item textarea{
+    border:none;
+    padding: 8px 16px;
+    margin-top: 8px;
+}
+.item textarea::placeholder{
+    font-size: 16px;    
+}
+.btn{
+   width: 100%;
+   display: flex;
+  
+}
+.btn button{
+    width: 50%;
+    border: none;
+    font-size: 24px;
+    text-align: center;
+    padding: 16px 0;
+    color:#D0021B;
+    margin-top: 24px;
+}
+.btn i{
+    margin-right: 16px;
+}
+.btn button:first-child{
+    border-bottom-left-radius: 5px;
+}
+.btn button:nth-child(2){
+    background: #4A90E2;
+    color: #fff;
+    border-bottom-right-radius: 5px;
+}
+.task-list{
+    width: 620px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow:0 2px 3px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin-top: 24px;
+}
+.task-item{
+    padding-top: 24px;
+    padding-bottom: 17px;
+    padding-right: 32px;
+    padding-left: 32px;
+    margin-bottom: 8px;
+    background: #F2F2F2;
+}
+.task-item i{
+    font-size: 24px;
+}
+.task-item .star,.task-item .editing{
+    display: inline-block;
+    height: 24px;
+    width: 23px;
+}
+.task-item .star{
+    margin-left: 158px;
+    margin-right:32px;
+}
+.task-item .star i{
+    color: #F5A623 ;
+}
+.info{
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 15px;
+    color: #757575;
+}
+.info i{
+    color:#757575;
+    padding-right: 8px;
+}
+.task-item input[type=text]{
+    border: none;
+    background-color: #F2F2F2;
+    color: #000;
+    font-size: 24px;
+    line-height: 28px;
+    outline:none;
+    margin-left: 16px;
+    font-weight: 500;
+}
+.task-item input[type=text]::placeholder{
+    color: #000;
+}
